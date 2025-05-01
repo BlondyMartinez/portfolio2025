@@ -1,23 +1,42 @@
-import { useState } from 'react'
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import About from './components/About'
+import Experience from './components/Experience'
+import Projects from './components/Projects'
+import Skills from './components/Skills'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 
-function App() {
-  const [count, setCount] = useState(0)
+const App: React.FC = () => {
+  const [darkMode, setDarkMode] = React.useState(false)
+
+  React.useEffect(() => {
+    document.documentElement.setAttribute('data-theme', darkMode ? 'dark' : 'light')
+  }, [darkMode])
 
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center p-8">
-      <h1 className="text-4xl font-bold text-gray-800 mb-8">Hello Tailwind!</h1>
-      <div className="bg-white p-8 rounded-lg shadow-lg">
-        <button 
-          onClick={() => setCount((count) => count + 1)}
-          className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors"
-        >
-          count is {count}
-        </button>
-        <p className="mt-4 text-gray-600">
-          Edit <code className="bg-gray-100 px-2 py-1 rounded">src/App.tsx</code> and save to test HMR
-        </p>
+    <Router>
+      <div className="min-h-screen">
+        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+        <main className="container mx-auto px-4 py-8">
+          <Routes>
+            <Route path="/" element={
+              <>
+                <Hero />
+                <About />
+                <Experience />
+                <Projects />
+                <Skills />
+                <Contact />
+              </>
+            } />
+          </Routes>
+        </main>
+        <Footer />
       </div>
-    </div>
+    </Router>
   )
 }
 
