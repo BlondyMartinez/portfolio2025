@@ -1,0 +1,197 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact",
+    "language": "Language"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "role": "Full Stack Developer",
+    "description": "Full Stack Developer with training in video game programming and a solid foundation in modern web technologies. Experience in full application development, open source contributions, and remote team work."
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I am a passionate Full Stack Developer with a strong background in Game Design and Development. I love creating innovative solutions and pushing the boundaries of technology.",
+    "education": {
+      "title": "Education",
+      "items": [
+        {
+          "degree": "Full Stack Software Development",
+          "institution": "4Geeks Academy España",
+          "year": "2024"
+        },
+        {
+          "degree": "Diploma in Video Game Programming",
+          "institution": "University of Gloucestershire",
+          "year": "2018 - 2023"
+        },
+        {
+          "degree": "Higher Degree in 3D Animation, Games and Interactive Environments",
+          "institution": "Florida Universitària",
+          "year": "2016 - 2018"
+        }
+      ]
+    },
+    "awards": {
+      "title": "Awards & Nominations",
+      "items": [
+        {
+          "title": "Nomination for 'Best Programmer'",
+          "event": "COMX 2019"
+        }
+      ]
+    },
+    "hackathons": {
+      "title": "Hackathons",
+      "items": [
+        {
+          "position": "7th Position",
+          "event": "CaixaBank Tech Coding Challenge: Frontend React - Round 3",
+          "technologies": ["React"]
+        },
+        {
+          "position": "5th Position",
+          "event": "Schneider Electric Iberian 2025 IT Challenge",
+          "technologies": ["Python", "Flask", "SQLite3"]
+        }
+      ]
+    },
+    "languages": {
+      "title": "Languages",
+      "items": [
+        {
+          "language": "Spanish",
+          "level": "Native"
+        },
+        {
+          "language": "English",
+          "level": "Advanced (C1)"
+        }
+      ]
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "current": "Present",
+    "positions": {
+      "frontend": {
+        "title": "Frontend Developer",
+        "company": "UFOLAB",
+        "period": "09/2024 - Present",
+        "location": "Remote",
+        "description": "Gamification SaaS Platform",
+        "technologies": ["React", "TypeScript", "Material UI"],
+        "responsibilities": [
+          "Develop modular UI components and interactive mini-games using internal SDK",
+          "Optimize performance of key games improving response time",
+          "Contribute new features to centralized repository"
+        ]
+      },
+      "openSource": {
+        "title": "Open Source Contributions",
+        "items": [
+          {
+            "project": "Web Oficial de Lola Lolita Land",
+            "organization": "midudev",
+            "year": "2025",
+            "technologies": ["Astro", "Tailwind CSS"],
+            "description": "Total accepted contributions: 30. Creation of interactive components, logo optimization, and mobile experience improvement."
+          },
+          {
+            "project": "Web Oficial de La Velada de Ibai Llanos",
+            "organization": "midudev",
+            "year": "2025",
+            "technologies": ["Astro", "Tailwind CSS"],
+            "description": "Total accepted contributions: 4. Visual error correction, branding update, and interface improvement."
+          }
+        ]
+      }
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "view": "View Project",
+    "items": {
+      "yana": {
+        "title": "You Are Not Alone",
+        "year": "2025",
+        "github": "https://github.com/IgrowkerTraining/i005-yana-front",
+        "technologies": ["React", "Django", "Material UI"],
+        "responsibilities": [
+          "Led a team of 3 frontend developers",
+          "Created reusable components for a consistent interface",
+          "Implemented multilingual support and responsive design",
+          "Created unit and integration tests"
+        ]
+      },
+      "taskit": {
+        "title": "Task It App",
+        "year": "2024",
+        "github": "https://github.com/4GeeksAcademy/TaskItApp",
+        "technologies": [
+          "React",
+          "Flask",
+          "SQLAlchemy",
+          "Bootstrap",
+          "Socket.IO"
+        ],
+        "responsibilities": [
+          "Led database design, UI/UX, backend and frontend development",
+          "Built real-time features (chat, notifications)",
+          "Integrated Google Maps for location-based tasks",
+          "Coordinated agile planning using Trello"
+        ]
+      }
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "languages": {
+      "title": "Languages",
+      "items": ["JavaScript", "TypeScript", "Ruby", "Python", "C#", "C++"]
+    },
+    "frontend": {
+      "title": "Frontend",
+      "items": ["React", "Astro", "Tailwind CSS", "Material UI", "Bootstrap"]
+    },
+    "backend": {
+      "title": "Backend",
+      "items": ["Flask", "Django", "PostgreSQL", "SQLAlchemy"]
+    },
+    "tools": {
+      "title": "Tools",
+      "items": ["Git", "GitHub", "Trello", "Jira", "Shortcut", "Socket.IO"]
+    },
+    "testing": {
+      "title": "Testing",
+      "items": ["Django Tests", "RSpec", "Jest"]
+    },
+    "gameEngines": {
+      "title": "Game Engines",
+      "items": ["Unreal Engine 5", "Unity"]
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "social": {
+      "title": "Get in Touch",
+      "phone": "+34 660 32 72 34",
+      "email": "blondymm97@gmail.com",
+      "linkedin": "LinkedIn Profile",
+      "website": "Personal Website",
+      "location": "Barracas, Castellón, Comunidad Valenciana, España"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "built": "Built with React and TypeScript"
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "contact": "Contacto",
+    "language": "Idioma"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "role": "Desarrolladora Full Stack",
+    "description": "Desarrolladora Full Stack con formación en programación de videojuegos y una base sólida en tecnologías web modernas. Experiencia en desarrollo de aplicaciones completas, contribuciones a código abierto y trabajo en equipo remoto."
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "description": "Soy un Desarrollador Full Stack apasionado con una sólida formación en Diseño y Desarrollo de Videojuegos. Me encanta crear soluciones innovadoras y explorar los límites de la tecnología.",
+    "education": {
+      "title": "Educación",
+      "items": [
+        {
+          "degree": "Desarrollo de Software Full Stack",
+          "institution": "4Geeks Academy España",
+          "year": "2024"
+        },
+        {
+          "degree": "Diploma en Programación de Videojuegos",
+          "institution": "University of Gloucestershire",
+          "year": "2018 - 2023"
+        },
+        {
+          "degree": "Grado Superior en Animación 3D, juegos y entornos interactivos",
+          "institution": "Florida Universitària",
+          "year": "2016 - 2018"
+        }
+      ]
+    },
+    "awards": {
+      "title": "Premios y Nominaciones",
+      "items": [
+        {
+          "title": "Nominación a 'Mejor Programador'",
+          "event": "COMX 2019"
+        }
+      ]
+    },
+    "hackathons": {
+      "title": "Hackathons",
+      "items": [
+        {
+          "position": "7º posición",
+          "event": "CaixaBank Tech Coding Challenge: Frontend React - Round 3",
+          "technologies": ["React"]
+        },
+        {
+          "position": "5º posición",
+          "event": "Schneider Electric Iberian 2025 IT Challenge",
+          "technologies": ["Python", "Flask", "SQLite3"]
+        }
+      ]
+    },
+    "languages": {
+      "title": "Idiomas",
+      "items": [
+        {
+          "language": "Español",
+          "level": "Nativo"
+        },
+        {
+          "language": "Inglés",
+          "level": "Avanzado (C1)"
+        }
+      ]
+    }
+  },
+  "experience": {
+    "title": "Experiencia",
+    "current": "Actualidad",
+    "positions": {
+      "frontend": {
+        "title": "Desarrolladora Frontend",
+        "company": "UFOLAB",
+        "period": "09/2024 - Actualidad",
+        "location": "Remoto",
+        "description": "Plataforma SaaS de gamificación",
+        "technologies": ["React", "TypeScript", "Material UI"],
+        "responsibilities": [
+          "Desarrollo componentes UI modulares y mini-juegos interactivos usando el SDK interno",
+          "Optimización el rendimiento de juegos clave mejorando la respuesta",
+          "Contribución nuevas funcionalidades al repositorio centralizado"
+        ]
+      },
+      "openSource": {
+        "title": "Contribuciones Open Source",
+        "items": [
+          {
+            "project": "Web Oficial de Lola Lolita Land",
+            "organization": "midudev",
+            "year": "2025",
+            "technologies": ["Astro", "Tailwind CSS"],
+            "description": "Contribuciones totales aceptadas: 30. Creación componentes interactivos, optimicación de logos y mejora de la experiencia móvil."
+          },
+          {
+            "project": "Web Oficial de La Velada de Ibai Llanos",
+            "organization": "midudev",
+            "year": "2025",
+            "technologies": ["Astro", "Tailwind CSS"],
+            "description": "Contribuciones totales aceptadas: 4. Corrección de errores visuales, actualización del branding y mejora de la interfaz."
+          }
+        ]
+      }
+    }
+  },
+  "projects": {
+    "title": "Proyectos",
+    "view": "Ver Proyecto",
+    "items": {
+      "yana": {
+        "title": "You Are Not Alone",
+        "year": "2025",
+        "github": "https://github.com/IgrowkerTraining/i005-yana-front",
+        "technologies": ["React", "Django", "Material UI"],
+        "responsibilities": [
+          "Liderazgo de un equipo de 3 desarrolladores frontend",
+          "Creación de componentes reutilizables para una interfaz coherente",
+          "Implementación de soporte multilenguaje y diseño responsivo",
+          "Creación de pruebas unitarias y de integración"
+        ]
+      },
+      "taskit": {
+        "title": "Task It App",
+        "year": "2024",
+        "github": "https://github.com/4GeeksAcademy/TaskItApp",
+        "technologies": [
+          "React",
+          "Flask",
+          "SQLAlchemy",
+          "Bootstrap",
+          "Socket.IO"
+        ],
+        "responsibilities": [
+          "Liderazgo del diseño de base de datos, UI/UX, backend y frontend",
+          "Construcción de funcionalidades en tiempo real (chat, notificaciones)",
+          "Integración Google Maps para tareas basadas en ubicación",
+          "Coordinación de la planificación ágil usando Trello"
+        ]
+      }
+    }
+  },
+  "skills": {
+    "title": "Habilidades",
+    "languages": {
+      "title": "Lenguajes",
+      "items": ["JavaScript", "TypeScript", "Ruby", "Python", "C#", "C++"]
+    },
+    "frontend": {
+      "title": "Frontend",
+      "items": ["React", "Astro", "Tailwind CSS", "Material UI", "Bootstrap"]
+    },
+    "backend": {
+      "title": "Backend",
+      "items": ["Flask", "Django", "PostgreSQL", "SQLAlchemy"]
+    },
+    "tools": {
+      "title": "Herramientas",
+      "items": ["Git", "GitHub", "Trello", "Jira", "Shortcut", "Socket.IO"]
+    },
+    "testing": {
+      "title": "Testing",
+      "items": ["Django Tests", "RSpec", "Jest"]
+    },
+    "gameEngines": {
+      "title": "Motores de Juego",
+      "items": ["Unreal Engine 5", "Unity"]
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "message": "Mensaje",
+    "send": "Enviar Mensaje",
+    "social": {
+      "title": "Contacta conmigo",
+      "phone": "+34 660 32 72 34",
+      "email": "blondymm97@gmail.com",
+      "linkedin": "Perfil de LinkedIn",
+      "website": "Sitio Web Personal",
+      "location": "Barracas, Castellón, Comunidad Valenciana, España"
+    }
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados"
+  }
+}
