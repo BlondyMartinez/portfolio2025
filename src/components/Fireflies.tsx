@@ -32,13 +32,13 @@ const Fireflies: React.FC = () => {
   }, []);
 
   return (
-    <div className="fixed inset-0 pointer-events-none z-50">
+    <div className="absolute inset-0 pointer-events-none z-50 overflow-hidden">
       {fireflies.map((firefly) => (
         <div
           key={firefly.id}
           className="firefly"
           style={{
-            position: 'fixed',
+            position: 'absolute',
             left: '50%',
             top: '50%',
             width: '0.4vw',
@@ -51,12 +51,12 @@ const Fireflies: React.FC = () => {
       <style>
         {`
           .firefly {
-            position: fixed;
+            position: absolute;
             left: 50%;
             top: 50%;
             width: 0.4vw;
             height: 0.4vw;
-            margin: -0.2vw 0 0 9.8vw;
+            margin: '-0.2vw 0 0 9.8vw';
             pointer-events: none;
           }
 
