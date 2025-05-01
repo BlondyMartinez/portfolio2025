@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+:root {
+  --text-primary: #1a1a1a;
+  --text-secondary: #4a5568;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f7fafc;
+  --card-bg: #ffffff;
+}
+
+[data-theme="dark"] {
+  --text-primary: #ffffff;
+  --text-secondary: #e2e8f0;
+  --bg-primary: #1a202c;
+  --bg-secondary: #2d3748;
+  --card-bg: #2d3748;
+}
+
+body {
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+}
