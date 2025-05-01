@@ -26,56 +26,65 @@ const About = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="about" className="py-20">
+    <section id="about" className="py-20 bg-gradient-to-b from-[#1a2e2a] to-[#0a2434]">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-[var(--text-primary)] mb-8">{t('about.title')}</h2>
+        <h2 className="text-4xl font-bold text-white mb-12 text-center">{t('about.title')}</h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           <div>
-            <h3 className="text-xl font-semibold text-[var(--text-primary)] mb-4">{t('about.education.title')}</h3>
-            <div className="space-y-4">
+            <h3 className="text-2xl font-semibold text-blue-400 mb-6">{t('about.education.title')}</h3>
+            <div className="space-y-6">
               {(t('about.education.items', { returnObjects: true }) as EducationItem[]).map((item, index) => (
-                <div key={index} className="bg-[var(--card-bg)] p-4 rounded-lg shadow">
-                  <h4 className="font-semibold text-[var(--text-primary)]">{item.degree}</h4>
-                  <p className="text-[var(--text-secondary)]">{item.institution}</p>
-                  <p className="text-[var(--text-secondary)]">{item.year}</p>
+                <div key={index} className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-700/50 hover:border-blue-400/50 transition-all duration-300">
+                  <h4 className="font-semibold text-white mb-2">{item.degree}</h4>
+                  <p className="text-gray-300 mb-1">{item.institution}</p>
+                  <p className="text-gray-400 text-sm">{item.year}</p>
                 </div>
               ))}
             </div>
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold text-[var(--text-primary)] mb-4">{t('about.awards.title')}</h3>
-            <div className="space-y-4">
+            <h3 className="text-2xl font-semibold text-blue-400 mb-6">{t('about.awards.title')}</h3>
+            <div className="space-y-6">
               {(t('about.awards.items', { returnObjects: true }) as AwardItem[]).map((item, index) => (
-                <div key={index} className="bg-[var(--card-bg)] p-4 rounded-lg shadow">
-                  <h4 className="font-semibold text-[var(--text-primary)]">{item.title}</h4>
-                  <p className="text-[var(--text-secondary)]">{item.event}</p>
+                <div key={index} className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-700/50 hover:border-blue-400/50 transition-all duration-300">
+                  <h4 className="font-semibold text-white mb-2">{item.title}</h4>
+                  <p className="text-gray-300">{item.event}</p>
                 </div>
               ))}
             </div>
           </div>
         </div>
 
-        <div className="mt-8">
-          <h3 className="text-xl font-semibold text-[var(--text-primary)] mb-4">{t('about.hackathons.title')}</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="mt-16 max-w-6xl mx-auto">
+          <h3 className="text-2xl font-semibold text-blue-400 mb-6">{t('about.hackathons.title')}</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {(t('about.hackathons.items', { returnObjects: true }) as HackathonItem[]).map((item, index) => (
-              <div key={index} className="bg-[var(--card-bg)] p-4 rounded-lg shadow">
-                <h4 className="font-semibold text-[var(--text-primary)]">{item.position} - {item.event}</h4>
-                <p className="text-[var(--text-secondary)]">{item.technologies.join(', ')}</p>
+              <div key={index} className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-700/50 hover:border-blue-400/50 transition-all duration-300">
+                <h4 className="font-semibold text-white mb-2">{item.position} - {item.event}</h4>
+                <div className="flex flex-wrap gap-2 mt-3">
+                  {item.technologies.map((tech, techIndex) => (
+                    <span 
+                      key={techIndex} 
+                      className="px-3 py-1 bg-blue-400/10 text-blue-400 rounded-full text-sm hover:bg-blue-400/20 transition-colors"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
               </div>
             ))}
           </div>
         </div>
 
-        <div className="mt-8">
-          <h3 className="text-xl font-semibold text-[var(--text-primary)] mb-4">{t('about.languages.title')}</h3>
-          <div className="flex space-x-4">
+        <div className="mt-16 max-w-6xl mx-auto">
+          <h3 className="text-2xl font-semibold text-blue-400 mb-6">{t('about.languages.title')}</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {(t('about.languages.items', { returnObjects: true }) as LanguageItem[]).map((item, index) => (
-              <div key={index} className="bg-[var(--card-bg)] p-4 rounded-lg shadow">
-                <p className="text-[var(--text-primary)]">{item.language}</p>
-                <p className="text-[var(--text-secondary)]">{item.level}</p>
+              <div key={index} className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-700/50 hover:border-blue-400/50 transition-all duration-300">
+                <p className="text-white font-medium mb-1">{item.language}</p>
+                <p className="text-gray-300">{item.level}</p>
               </div>
             ))}
           </div>
