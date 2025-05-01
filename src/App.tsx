@@ -1,5 +1,4 @@
-import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { useEffect, useState } from 'react';
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -8,36 +7,63 @@ import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-import Fireflies from './components/Fireflies'
-const App: React.FC = () => {
-  const [darkMode, setDarkMode] = React.useState(false)
 
-  React.useEffect(() => {
-    document.documentElement.setAttribute('data-theme', darkMode ? 'dark' : 'light')
-  }, [darkMode])
+function App() {
+
+  const [activeSection, setActiveSection] = useState('');
+
+  useEffect(() => {
+    document.documentElement.style.scrollBehavior = 'smooth';
+
+    const handleScroll = () => {
+      const sections = document.querySelectorAll('section');
+      const scrollPosition = window.scrollY + window.innerHeight / 2;
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        const sectionId = section.getAttribute('id');
+
+        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+          setActiveSection(sectionId || '');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+
+    return () => {
+      document.documentElement.style.scrollBehavior = 'auto';
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <Router>
-      <div className="min-h-screen">
-        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-        <Fireflies />
-        <main className="py-8">
-          <Routes>
-            <Route path="/" element={
-              <>
-                <Hero />
-                <About />
-                <Experience />
-                <Projects />
-                <Skills />
-                <Contact />
-              </>
-            } />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
-    </Router>
+    <div className="min-h-screen bg-[#0a2434] text-white">
+      <Navbar activeSection={activeSection} />
+      <main className="relative z-10">
+        <section id="hero" className="section-transition">
+          <Hero />
+        </section>
+        <section id="about" className="section-transition">
+          <About />
+        </section>
+        <section id="experience" className="section-transition">
+          <Experience />
+        </section>
+        <section id="projects" className="section-transition">
+          <Projects />
+        </section>
+        <section id="skills" className="section-transition">
+          <Skills />
+        </section>
+        <section id="contact" className="section-transition">
+          <Contact />
+        </section>
+      </main>
+      <Footer />
+    </div>
   )
 }
 
