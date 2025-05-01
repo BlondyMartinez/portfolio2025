@@ -15,7 +15,6 @@
   },
   "about": {
     "title": "About Me",
-    "description": "I am a passionate Full Stack Developer with a strong background in Game Design and Development. I love creating innovative solutions and pushing the boundaries of technology.",
     "education": {
       "title": "Education",
       "items": [
@@ -77,8 +76,8 @@
   "experience": {
     "title": "Experience",
     "current": "Present",
-    "positions": {
-      "frontend": {
+    "positions": [
+      {
         "title": "Frontend Developer",
         "company": "UFOLAB",
         "period": "09/2024 - Present",
@@ -90,26 +89,26 @@
           "Optimize performance of key games improving response time",
           "Contribute new features to centralized repository"
         ]
-      },
-      "openSource": {
-        "title": "Open Source Contributions",
-        "items": [
-          {
-            "project": "Web Oficial de Lola Lolita Land",
-            "organization": "midudev",
-            "year": "2025",
-            "technologies": ["Astro", "Tailwind CSS"],
-            "description": "Total accepted contributions: 30. Creation of interactive components, logo optimization, and mobile experience improvement."
-          },
-          {
-            "project": "Web Oficial de La Velada de Ibai Llanos",
-            "organization": "midudev",
-            "year": "2025",
-            "technologies": ["Astro", "Tailwind CSS"],
-            "description": "Total accepted contributions: 4. Visual error correction, branding update, and interface improvement."
-          }
-        ]
       }
+    ],
+    "openSource": {
+      "title": "Open Source Contributions",
+      "items": [
+        {
+          "project": "Web Oficial de Lola Lolita Land",
+          "organization": "midudev",
+          "year": "2025",
+          "technologies": ["Astro", "Tailwind CSS"],
+          "description": "Total accepted contributions: 30. Creation of interactive components, logo optimization, and mobile experience improvement."
+        },
+        {
+          "project": "Web Oficial de La Velada de Ibai Llanos",
+          "organization": "midudev",
+          "year": "2025",
+          "technologies": ["Astro", "Tailwind CSS"],
+          "description": "Total accepted contributions: 4. Visual error correction, branding update, and interface improvement."
+        }
+      ]
     }
   },
   "projects": {
