@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import TechBadge from './TechBadge';
 
 const Skills = () => {
   const { t } = useTranslation();
@@ -18,13 +19,8 @@ const Skills = () => {
               >
                 <h3 className="text-xl font-semibold text-blue-400 mb-6">{category.title}</h3>
                 <div className="flex flex-wrap gap-3">
-                  {category.items.map((skill: string, index: number) => (
-                    <span
-                      key={index}
-                      className="px-4 py-2 bg-blue-400/10 text-blue-400 rounded-full text-sm hover:bg-blue-400/20 transition-colors"
-                    >
-                      {skill}
-                    </span>
+                  {category.items.map((skill: string) => (
+                    <TechBadge key={`${category.title}-${skill}`} name={skill} />
                   ))}
                 </div>
               </div>

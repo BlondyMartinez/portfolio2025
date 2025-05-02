@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import TechBadge from './TechBadge';
 
 interface EducationItem {
   degree: string;
@@ -64,13 +65,8 @@ const About = () => {
               <div key={index} className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-lg border border-gray-700/50 hover:border-blue-400/50 transition-all duration-300">
                 <h4 className="font-semibold text-white mb-2">{item.position} - {item.event}</h4>
                 <div className="flex flex-wrap gap-2 mt-3">
-                  {item.technologies.map((tech, techIndex) => (
-                    <span 
-                      key={techIndex} 
-                      className="px-3 py-1 bg-blue-400/10 text-blue-400 rounded-full text-sm hover:bg-blue-400/20 transition-colors"
-                    >
-                      {tech}
-                    </span>
+                  {item.technologies.map((tech) => (
+                    <TechBadge key={`${item.event}-${tech}`} name={tech} />
                   ))}
                 </div>
               </div>
