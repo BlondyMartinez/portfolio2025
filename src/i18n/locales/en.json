@@ -5,8 +5,7 @@
     "experience": "Experience",
     "projects": "Projects",
     "skills": "Skills",
-    "contact": "Contact",
-    "language": "Language"
+    "contact": "Contact"
   },
   "hero": {
     "greeting": "Hi, I'm",
@@ -21,17 +20,37 @@
         {
           "degree": "Full Stack Software Development",
           "institution": "4Geeks Academy España",
-          "year": "2024"
+          "year": "2024",
+          "technologies": [
+            "React",
+            "JavaScript",
+            "Flask",
+            "Python",
+            "PostgreSQL",
+            "SQLAlchemy",
+            "Git",
+            "GitHub",
+            "Trello"
+          ]
         },
         {
           "degree": "Diploma in Video Game Programming",
           "institution": "University of Gloucestershire",
-          "year": "2018 - 2023"
+          "year": "2018 - 2023",
+          "technologies": [
+            "Unreal Engine 5",
+            "Unity",
+            "C++",
+            "C#",
+            "Git",
+            "GitHub"
+          ]
         },
         {
           "degree": "Higher Degree in 3D Animation, Games and Interactive Environments",
           "institution": "Florida Universitària",
-          "year": "2016 - 2018"
+          "year": "2016 - 2018",
+          "technologies": ["Unity", "C#", "Git", "GitHub"]
         }
       ]
     },
@@ -78,12 +97,22 @@
     "current": "Present",
     "positions": [
       {
+        "id": "ufolab",
         "title": "Frontend Developer",
         "company": "UFOLAB",
         "period": "09/2024 - Present",
         "location": "Remote",
-        "description": "Gamification SaaS Platform",
-        "technologies": ["React", "TypeScript", "Material UI"],
+        "website": "https://theufolab.com/",
+        "description": "SaaS platform for creating incredible games in minutes. Democratizing gamification for companies.",
+        "technologies": [
+          "React",
+          "TypeScript",
+          "Material UI",
+          "Git",
+          "GitHub",
+          "Jira",
+          "Shortcut"
+        ],
         "responsibilities": [
           "Implemented interactive frontend features for mini-games and gamified learning experiences.",
           "Built reusable UI components with Material UI, ensuring consistent styling and responsive design.",
@@ -100,7 +129,7 @@
           "project": "Official Website of Lola Lolita Land",
           "organization": "midudev",
           "year": "2025",
-          "technologies": ["Astro", "Tailwind CSS"],
+          "technologies": ["Astro", "Tailwind CSS", "Git", "GitHub"],
           "totalContributions": 30,
           "contributions": [
             "Refactored the FAQ section layout and styling for improved readability and consistency.",
@@ -122,7 +151,7 @@
           "project": "Official Website of La Velada de Ibai Llanos",
           "organization": "midudev",
           "year": "2025",
-          "technologies": ["Astro", "Tailwind CSS"],
+          "technologies": ["Astro", "Tailwind CSS", "Git", "GitHub"],
           "totalContributions": 4,
           "contributions": [
             "Increased header height for improved layout and design consistency.",
@@ -215,7 +244,12 @@
     }
   },
   "footer": {
-    "rights": "All rights reserved",
-    "built": "Built with React and TypeScript"
+    "rights": "All rights reserved"
+  },
+  "common": {
+    "contributions": "Contributions",
+    "technologies": "Technologies",
+    "website": "Visit Website",
+    "source": "View Source"
   }
 }
