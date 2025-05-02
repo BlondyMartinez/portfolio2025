@@ -46,14 +46,14 @@ function App() {
         <section id="hero" className="section-transition">
           <Hero />
         </section>
-        <section id="about" className="section-transition">
-          <About />
-        </section>
         <section id="experience" className="section-transition">
           <Experience />
         </section>
         <section id="projects" className="section-transition">
           <Projects />
+        </section>
+        <section id="about" className="section-transition">
+          <About />
         </section>
         <section id="skills" className="section-transition">
           <Skills />
