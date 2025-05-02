@@ -1,19 +1,13 @@
 import { useTranslation } from 'react-i18next';
+import TechBadge from './TechBadge';
 
 const Projects = () => {
   const { t } = useTranslation();
   const projectsData = t('projects.items', { returnObjects: true });
   
   // Ensure projectsData is an array
-  const projects = Array.isArray(projectsData) 
-    ? projectsData as Array<{
-        title: string;
-        description: string;
-        image: string;
-        technologies: string[];
-        github?: string;
-        demo?: string;
-      }>
+  const projects = projectsData && typeof projectsData === 'object'
+    ? Object.values(projectsData)
     : [];
 
   if (projects.length === 0) {
@@ -32,7 +26,7 @@ const Projects = () => {
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-white mb-12 text-center">{t('projects.title')}</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto">
           {projects.map((project, index) => (
             <div 
               key={index}
@@ -51,13 +45,8 @@ const Projects = () => {
               <p className="text-gray-300 mb-4">{project.description}</p>
               
               <div className="flex flex-wrap gap-2 mb-4">
-                {project.technologies.map((tech, techIndex) => (
-                  <span
-                    key={techIndex}
-                    className="px-3 py-1 bg-blue-400/10 text-blue-400 rounded-full text-sm hover:bg-blue-400/20 transition-colors"
-                  >
-                    {tech}
-                  </span>
+                {project.technologies.map((tech: string) => (
+                  <TechBadge key={`${project.title}-${tech}`} name={tech} />
                 ))}
               </div>
 
