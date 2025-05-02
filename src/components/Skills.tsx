@@ -9,7 +9,7 @@ const Skills = () => {
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-white mb-12 text-center">{t('skills.title')}</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto">
           {Object.entries(t('skills', { returnObjects: true })).map(([key, category]: [string, any]) => {
             if (key === 'title') return null;
             return (
