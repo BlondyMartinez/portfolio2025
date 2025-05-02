@@ -7,6 +7,7 @@ import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import FireflyCursor from './components/FireflyCursor'
 
 function App() {
 
@@ -63,6 +64,7 @@ function App() {
         </section>
       </main>
       <Footer />
+      <FireflyCursor />
     </div>
   )
 }
