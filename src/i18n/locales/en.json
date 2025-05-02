@@ -55,7 +55,7 @@
         {
           "position": "5th Position",
           "event": "Schneider Electric Iberian 2025 IT Challenge",
-          "technologies": ["Python", "Flask", "SQLite3"]
+          "technologies": ["Python", "Flask", "SQLite"]
         }
       ]
     },
@@ -85,9 +85,10 @@
         "description": "Gamification SaaS Platform",
         "technologies": ["React", "TypeScript", "Material UI"],
         "responsibilities": [
-          "Develop modular UI components and interactive mini-games using internal SDK",
-          "Optimize performance of key games improving response time",
-          "Contribute new features to centralized repository"
+          "Implemented interactive frontend features for mini-games and gamified learning experiences.",
+          "Built reusable UI components with Material UI, ensuring consistent styling and responsive design.",
+          "Collaborated with cross-functional teams including designers to deliver new features and resolve issues.",
+          "Participated in code reviews and maintained readable and scalable codebases using Git."
         ]
       }
     ],
@@ -95,18 +96,42 @@
       "title": "Open Source Contributions",
       "items": [
         {
-          "project": "Web Oficial de Lola Lolita Land",
+          "id": "lolalolitaland",
+          "project": "Official Website of Lola Lolita Land",
           "organization": "midudev",
           "year": "2025",
           "technologies": ["Astro", "Tailwind CSS"],
-          "description": "Total accepted contributions: 30. Creation of interactive components, logo optimization, and mobile experience improvement."
+          "totalContributions": 30,
+          "contributions": [
+            "Refactored the FAQ section layout and styling for improved readability and consistency.",
+            "Improved mobile responsiveness by adjusting padding, font sizes, margins, and layouts across multiple sections.",
+            "Replaced PNG assets with SVGs for brands like DKNY, Trolli, and Donettes, boosting performance and scalability.",
+            "Developed and integrated a Back to Top button and added prev/next buttons for easier navigation in the image lightbox.",
+            "Optimized responsive hero images and updated styles to improve the mobile viewing experience.",
+            "Enhanced accessibility by improving contrast and addressing visibility issues for header elements and the buy button on smaller screens.",
+            "Added a Google Calendar link with an icon to the Hero section for easier event access.",
+            "Introduced a BubbleBackground component in the gallery and sponsors sections for a more dynamic and engaging design.",
+            "Fixed zoom control behavior, improved mobile menu close functionality, and ensured all buttons were visible and functional across devices.",
+            "Standardized and corrected text formatting across the website (e.g., 'Lola Lolita Land') for consistency."
+          ],
+          "website": "https://www.lolalolitaland.com/",
+          "repository": "https://github.com/midudev/lolalolitaland.com"
         },
         {
-          "project": "Web Oficial de La Velada de Ibai Llanos",
+          "id": "lavelada",
+          "project": "Official Website of La Velada de Ibai Llanos",
           "organization": "midudev",
           "year": "2025",
           "technologies": ["Astro", "Tailwind CSS"],
-          "description": "Total accepted contributions: 4. Visual error correction, branding update, and interface improvement."
+          "totalContributions": 4,
+          "contributions": [
+            "Increased header height for improved layout and design consistency.",
+            "Fixed text layer z-index issue on the Hero section to enhance visual hierarchy.",
+            "Updated header logo size and source for better branding and visual impact.",
+            "Corrected typo in sponsor labels."
+          ],
+          "website": "https://www.infolavelada.com/",
+          "repository": "https://github.com/midudev/la-velada-web-oficial"
         }
       ]
     }
@@ -159,7 +184,7 @@
     },
     "backend": {
       "title": "Backend",
-      "items": ["Flask", "Django", "PostgreSQL", "SQLAlchemy"]
+      "items": ["Flask", "Django", "PostgreSQL", "SQLAlchemy", "SQLite"]
     },
     "tools": {
       "title": "Tools",

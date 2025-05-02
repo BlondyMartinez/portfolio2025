@@ -85,9 +85,10 @@
         "description": "Plataforma SaaS de gamificación",
         "technologies": ["React", "TypeScript", "Material UI"],
         "responsibilities": [
-          "Desarrollo componentes UI modulares y mini-juegos interactivos usando el SDK interno",
-          "Optimización el rendimiento de juegos clave mejorando la respuesta",
-          "Contribución nuevas funcionalidades al repositorio centralizado"
+          "Implementación de funcionalidades interactivas para mini-juegos y experiencias gamificadas.",
+          "Desarrollo de componentes reutilizables con Material UI, garantizando un diseño consistente y responsivo.",
+          "Colaboración con equipos multidisciplinarios para la entrega de nuevas funcionalidades y resolución de problemas.",
+          "Participación en revisiones de código y mantenimiento de código legible y escalable usando Git."
         ]
       }
     ],
@@ -99,14 +100,34 @@
           "organization": "midudev",
           "year": "2025",
           "technologies": ["Astro", "Tailwind CSS"],
-          "description": "Contribuciones totales aceptadas: 30. Creación componentes interactivos, optimicación de logos y mejora de la experiencia móvil."
+          "totalContributions": 30,
+          "contributions": [
+            "Refactorización del diseño de la sección de preguntas frecuentes usando Tailwind CSS para una mejor legibilidad y consistencia.",
+            "Mejora de la experiencia móvil ajustando márgenes, tamaños de fuente, espaciado y diseño en múltiples secciones.",
+            "Reemplazo de activos PNG con SVG para marcas como DKNY, Trolli y Donettes, mejorando el rendimiento y la escalabilidad.",
+            "Desarrollo de un botón de 'Volver Arriba' y botones de prev/next para una navegación más fácil en el lightbox de imágenes.",
+            "Optimización de imágenes responsivas para mejorar la experiencia de visualización en dispositivos móviles.",
+            "Mejora de la accesibilidad mejorando el contraste y abordando problemas de visibilidad para elementos de la cabecera y el botón de compra en pantallas más pequeñas.",
+            "Inclusión de un enlace de Google Calendar con un icono en la sección Hero para facilitar el acceso a eventos.",
+            "Introducción de un componente BubbleBackground en las secciones de galería y patrocinadores para un diseño más dinámico y atractivo.",
+            "Corrección del comportamiento de control de zoom, mejora de la funcionalidad de cierre del menú móvil y asegurando que todos los botones estuvieran visibles y funcionales en todos los dispositivos.",
+            "Estandarización y corrección de formato de texto en el sitio web (e.g., 'Lola Lolita Land') para mantener consistencia."
+          ]
         },
         {
           "project": "Web Oficial de La Velada de Ibai Llanos",
           "organization": "midudev",
           "year": "2025",
           "technologies": ["Astro", "Tailwind CSS"],
-          "description": "Contribuciones totales aceptadas: 4. Corrección de errores visuales, actualización del branding y mejora de la interfaz."
+          "totalContributions": 4,
+          "contributions": [
+            "Aumento de la altura del encabezado para mejorar el diseño y la consistencia.",
+            "Corrección del problema de z-index en la sección Hero para mejorar la jerarquía visual.",
+            "Actualización del tamaño y fuente del logo de la cabecera para mejor branding y impacto visual.",
+            "Corrección de un error tipográfico en las etiquetas de patrocinadores."
+          ],
+          "website": "https://www.infolavelada.com/",
+          "repository": "https://github.com/midudev/la-velada-web-oficial"
         }
       ]
     }
