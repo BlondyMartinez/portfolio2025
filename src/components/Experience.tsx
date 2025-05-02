@@ -4,6 +4,8 @@ import TechBadge from './TechBadge';
 import ufolabLogo from '../assets/ufo_agencia_logo.jpeg';
 import lolalolitalandLogo from '../assets/lolalolitaland.svg';
 import laveladaLogo from '../assets/lavelada.svg';
+import StarryNight from './StarryNight';
+import UfoIcon from './UfoIcon';
 
 const LOGO_MAP = {
   'ufolab': ufolabLogo,
@@ -14,6 +16,7 @@ const LOGO_MAP = {
 const Experience = () => {
   const { t } = useTranslation();
   const [expandedProjects, setExpandedProjects] = useState<{ [key: string]: boolean }>({});
+  const [ufolabHovered, setUfolabHovered] = useState(false);
 
   const sortByImportance = (contributions: string[]) => {
     return [...contributions].sort((a, b) => {
@@ -38,8 +41,33 @@ const Experience = () => {
           {(t('experience.positions', { returnObjects: true }) as Array<any>).map((position, index) => (
             <div key={index} className="group">
               <h3 className="text-2xl font-bold text-blue-400 mb-6">{position.title}</h3>
-              <div className="bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl shadow-2xl border border-gray-700/50 hover:border-blue-400/50 transition-all duration-300">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div
+                className="bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl shadow-2xl border border-gray-700/50 hover:border-blue-400/50 transition-all duration-300 relative overflow-hidden"
+                onMouseEnter={position.id === 'ufolab' ? () => setUfolabHovered(true) : undefined}
+                onMouseLeave={position.id === 'ufolab' ? () => setUfolabHovered(false) : undefined}
+              >
+                {position.id === 'ufolab' && (
+                  <>
+                    <div
+                      className={`absolute left-80 top-10 -translate-x-1/2 -translate-y-0 ufo-float`}
+                      style={{
+                        opacity: ufolabHovered ? 1 : 0,
+                        transition: 'opacity 0.5s',
+                        width: 80,
+                        height: 80,
+                        pointerEvents: 'none',
+                      }}
+                    >
+                      <UfoIcon />
+                    </div>
+                    <div
+                      className={`absolute inset-0 w-full h-full pointer-events-none transition-opacity duration-500 z-0 ${ufolabHovered ? 'opacity-100' : 'opacity-0'}`}
+                    >
+                      <StarryNight gradient="linear-gradient(75deg,rgba(26, 0, 77, 0.25) 0%, rgba(73, 48, 174, 0.25) 25%, rgba(208, 29, 253, 0.25) 50%, rgba(253, 47, 147, 0.25) 75%, rgba(29, 0, 156, 0.25) 100%)" />
+                    </div>
+                  </>
+                )}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
                   {/* Left: Main Info */}
                   <div className="md:col-span-1 flex flex-col justify-between">
                     <div>

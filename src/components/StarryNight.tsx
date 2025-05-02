@@ -1,10 +1,14 @@
 import React from 'react';
 
-const StarryNight: React.FC = () => {
+interface StarryNightProps {
+  gradient?: string;
+}
+
+const StarryNight: React.FC<StarryNightProps> = ({ gradient }) => {
   return (
     <div className="absolute inset-0 w-full h-full overflow-hidden" 
       style={{ 
-        background: 'linear-gradient(to bottom, #0a2434 0%, #1c4c3c 100%)'
+        background: gradient || 'linear-gradient(to bottom, #0a2434 0%, #1c4c3c 100%)'
       }}
     >
       <div className="stars absolute inset-0" style={{ background: 'transparent' }}>
