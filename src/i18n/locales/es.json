@@ -77,19 +77,6 @@
           "technologies": ["Python", "Flask", "SQLite3"]
         }
       ]
-    },
-    "languages": {
-      "title": "Idiomas",
-      "items": [
-        {
-          "language": "Español",
-          "level": "Nativo"
-        },
-        {
-          "language": "Inglés",
-          "level": "Avanzado (C1)"
-        }
-      ]
     }
   },
   "experience": {
@@ -143,7 +130,7 @@
           ]
         },
         {
-          "project": "Web Oficial de La Velada de Ibai Llanos",
+          "project": "Web Oficial de La Velada del Año V",
           "organization": "midudev",
           "year": "2025",
           "technologies": ["Astro", "Tailwind CSS", "Git", "GitHub"],

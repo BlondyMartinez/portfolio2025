@@ -77,19 +77,6 @@
           "technologies": ["Python", "Flask", "SQLite"]
         }
       ]
-    },
-    "languages": {
-      "title": "Languages",
-      "items": [
-        {
-          "language": "Spanish",
-          "level": "Native"
-        },
-        {
-          "language": "English",
-          "level": "Advanced (C1)"
-        }
-      ]
     }
   },
   "experience": {
@@ -148,7 +135,7 @@
         },
         {
           "id": "lavelada",
-          "project": "Official Website of La Velada de Ibai Llanos",
+          "project": "Official Website of La Velada del Año V",
           "organization": "midudev",
           "year": "2025",
           "technologies": ["Astro", "Tailwind CSS", "Git", "GitHub"],
@@ -173,7 +160,13 @@
         "title": "You Are Not Alone",
         "year": "2025",
         "github": "https://github.com/IgrowkerTraining/i005-yana-front",
-        "technologies": ["React", "Django", "Material UI"],
+        "technologies": [
+          "React",
+          "Material UI",
+          "Django",
+          "Django Tests",
+          "PostgreSQL"
+        ],
         "responsibilities": [
           "Led a team of 3 frontend developers",
           "Created reusable components for a consistent interface",
@@ -189,6 +182,7 @@
           "React",
           "Flask",
           "SQLAlchemy",
+          "PostgreSQL",
           "Bootstrap",
           "Socket.IO"
         ],
